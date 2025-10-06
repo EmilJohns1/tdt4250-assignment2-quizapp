@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated spl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="no.ntnu.tdt4250.spl.presentation.SplModelWizardID"
+            name="%_UI_SplModelWizard_label"
+            class="no.ntnu.tdt4250.spl.presentation.SplModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SplModelFile.gif">
+         <description>%_UI_SplModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated spl -->
+      <editor
+            id="no.ntnu.tdt4250.spl.presentation.SplEditorID"
+            name="%_UI_SplEditor_label"
+            icon="icons/full/obj16/SplModelFile.gif"
+            extensions="spl"
+            class="no.ntnu.tdt4250.spl.presentation.SplEditor"
+            contributorClass="no.ntnu.tdt4250.spl.presentation.SplActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

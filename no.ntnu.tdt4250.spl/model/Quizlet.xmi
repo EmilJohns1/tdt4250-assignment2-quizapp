@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spl:QuizApp
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:spl="http://www.ntnu.no/tdt4250/spl"
+    xsi:schemaLocation="http://www.ntnu.no/tdt4250/spl spl.ecore"
+    name="Quizlet">
+  <user xsi:type="spl:GuestUser"
+      id="1"
+      attemptedQuizzes="//@quiz.0"/>
+  <user xsi:type="spl:LoggedInUser"
+      id="2"
+      attemptedQuizzes="//@quiz.0"
+      username="EmilJohnsen"
+      streak="4"
+      comments="//@comment.0"
+      createdQuizzes="//@quiz.0"/>
+  <quiz title="Science Quiz"
+      description="This is a science quiz"
+      createdBy="2"
+      attemptedBy="1 2"
+      comments="//@comment.0"
+      createdDate="2025-09-29T15:30:00.000+0200"/>
+  <comment content="Very nice quiz!"
+      author="2"
+      quiz="//@quiz.0"
+      timestamp="2025-09-30T15:30:00.000+0200"/>
+</spl:QuizApp>

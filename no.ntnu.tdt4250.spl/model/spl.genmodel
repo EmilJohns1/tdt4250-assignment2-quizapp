@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/no.ntnu.tdt4250.spl/src-gen" creationIcons="false"
+    editDirectory="/no.ntnu.tdt4250.spl.edit/src-gen" editorDirectory="/no.ntnu.tdt4250.spl.editor/src-gen"
+    modelPluginID="no.ntnu.tdt4250.spl" modelName="Spl" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="21.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>spl.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Spl" basePackage="no.ntnu.tdt4250" disposableProviderFactory="true"
+      ecorePackage="spl.ecore#/">
+    <genClasses ecoreClass="spl.ecore#//User">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//User/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spl.ecore#//User/attemptedQuizzes"/>
+    </genClasses>
+    <genClasses ecoreClass="spl.ecore#//Quiz">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//Quiz/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//Quiz/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spl.ecore#//Quiz/createdBy"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spl.ecore#//Quiz/attemptedBy"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spl.ecore#//Quiz/comments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//Quiz/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//Quiz/createdDate"/>
+    </genClasses>
+    <genClasses ecoreClass="spl.ecore#//Comment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//Comment/content"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spl.ecore#//Comment/author"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spl.ecore#//Comment/quiz"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//Comment/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//Comment/timestamp"/>
+    </genClasses>
+    <genClasses ecoreClass="spl.ecore#//GuestUser"/>
+    <genClasses ecoreClass="spl.ecore#//LoggedInUser">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//LoggedInUser/username"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//LoggedInUser/profilePictureURL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//LoggedInUser/streak"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spl.ecore#//LoggedInUser/comments"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spl.ecore#//LoggedInUser/createdQuizzes"/>
+    </genClasses>
+    <genClasses ecoreClass="spl.ecore#//QuizApp">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//QuizApp/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference spl.ecore#//QuizApp/user"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference spl.ecore#//QuizApp/quiz"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference spl.ecore#//QuizApp/comment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spl.ecore#//QuizApp/totalQuizzes"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

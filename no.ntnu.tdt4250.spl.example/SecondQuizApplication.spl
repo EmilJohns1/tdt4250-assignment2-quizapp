@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spl:QuizApp xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:spl="http://www.ntnu.no/tdt4250/spl" name="Kahoot">
+  <user xsi:type="spl:GuestUser" id="0" attemptedQuizzes="//@quiz.0"/>
+  <user xsi:type="spl:LoggedInUser" id="1" attemptedQuizzes="//@quiz.0" username="Tommy Ingebritsen" streak="9" comments="//@comment.0" createdQuizzes="//@quiz.0"/>
+  <quiz title="Sports Quiz" createdBy="1" attemptedBy="0 1" comments="//@comment.0" createdDate="2025-10-02T00:00:00.000+0200"/>
+  <comment content="Amazing!" author="1" quiz="//@quiz.0" timestamp="2025-10-03T00:00:00.000+0200"/>
+</spl:QuizApp>
