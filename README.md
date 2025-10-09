@@ -14,21 +14,25 @@ The metamodel represents this variability at the domain level and supports confi
 
 ## Repository Structure
 
-├── no.ntnu.tdt4250.spl/ # Model project (Ecore, generated Java code, constraints, derived features)
-│ ├── model/ # Ecore, genmodel definitions, example instance
-│ ├── src-gen/ # Automatically generated EMF code
-│ ├── test/ # JUnit tests for constraints and derived features
-│ ├── META-INF/ # Plugin metadata
-│   └── MANIFEST.MF
-│ └── build.properties, plugin.properties, plugin.xml
+```
+tdt4250-assignment2-quizapp
+├── no.ntnu.tdt4250.spl/           # Model project (Ecore, generated Java code, constraints, derived features)
+│   ├── model/                     # Ecore, Genmodel definitions, example instance
+│   ├── src-gen/                   # Automatically generated EMF code
+│   ├── test/                      # JUnit tests for constraints and derived features
+│   ├── META-INF/                  # Plugin metadata
+│   │   └── MANIFEST.MF
+│   ├── build.properties
+│   ├── plugin.properties
+│   └── plugin.xml
 │
-├── no.ntnu.tdt4250.spl.edit/ # Edit plugin
-├── no.ntnu.tdt4250.spl.editor/ # Editor plugin
-├── no.ntnu.tdt4250.spl.example # Example instances of the Ecore model
+├── no.ntnu.tdt4250.spl.edit/      # Edit plugin
+├── no.ntnu.tdt4250.spl.editor/    # Editor plugin
+├── no.ntnu.tdt4250.spl.example/   # Example instances of the Ecore model
 │
-├── README.md # Project description and instructions
-└──  quizapp-ecore-diagram.jpg # Ecore class diagram
-
+├── README.md                      # Project description and instructions
+└── quizapp-ecore-diagram.jpg      # Ecore class diagram
+```
 
 ---
 
