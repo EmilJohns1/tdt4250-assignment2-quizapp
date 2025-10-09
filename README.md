@@ -1,4 +1,4 @@
-# TDT4250 – Assignment 2: Quiz Application Ecore Model
+# TDT4250 - Assignment 2: Quiz Application Ecore Model
 
 ## Overview
 This repository contains the Ecore-based domain model for a configurable **Quiz Application**.  
@@ -40,12 +40,12 @@ tdt4250-assignment2-quizapp
 The **Quiz Application** domain supports the creation, participation, and interaction around quizzes.  
 The main entities are:
 
-- **QuizApp** – the root container of the application that holds all users, quizzes, and comments.  
-- **User (abstract)** – represents a general user of the system.
-  - **GuestUser** – can only attempt quizzes created by others.
-  - **LoggedInUser** – can create quizzes, comment, and track activity.
-- **Quiz** – created by a logged-in user, can be attempted by users, and can have comments.
-- **Comment** – written by a logged-in user and linked to a specific quiz.
+- **QuizApp** - the root container of the application that holds all users, quizzes, and comments.  
+- **User (abstract)** - represents a general user of the system.
+  - **GuestUser** - can only attempt quizzes created by others.
+  - **LoggedInUser** - can create quizzes, comment, and track activity.
+- **Quiz** - created by a logged-in user, can be attempted by users, and can have comments.
+- **Comment** - written by a logged-in user and linked to a specific quiz.
 
 This structure models the **variability point** between guest and logged-in users and allows both use modes to coexist within one configurable SPL product.
 
@@ -54,7 +54,7 @@ This structure models the **variability point** between guest and logged-in user
 ## Ecore Model Diagram
 The following image shows the structure of the Ecore metamodel:
 
-![QuizApp Ecore Diagram](quizapp-ecore-diagram.jpg)
+![QuizApp Ecore Diagram](quizapp_ecore_diagram.jpg)
 
 ---
 
@@ -77,7 +77,7 @@ Representative model instances are provided in the `no.ntnu.tdt4250.spl.example`
 The `.spl` file represents a valid configuration of the metamodel, illustrating different combinations of user types and quiz data.
 
 Example:  
-- `SecondQuizApplication.spl` – an instance including both a guest and a logged-in user interacting with quizzes.
+- `SecondQuizApplication.spl` - an instance including both a guest and a logged-in user interacting with quizzes.
 
 ---
 
@@ -87,7 +87,8 @@ Example:
 1. Clone or download the repository.
 2. In **Eclipse Modeling Tools**, select:  
    **File → Import → Existing Projects into Workspace → Select root directory → Choose the repository folder.**
-3. Ensure all three plugin projects (`.spl`, `.edit`, `.editor`) are imported.
+   **Optionally, you can import just the root .spl folder, and generate the rest of the code.**
+4. Ensure all three plugin projects (`.spl`, `.edit`, `.editor`) are imported.
 
 ### Configuring Java Version
 The project requires **Java 17**.  
@@ -137,6 +138,6 @@ Expected results:
 
 ## Author
 **Emil Johnsen**  
-NTNU – TDT4250 Model-Driven Software Engineering
+NTNU - TDT4250 Model-Driven Software Engineering
 Autumn 2025
 
